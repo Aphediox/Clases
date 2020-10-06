@@ -23,3 +23,18 @@ void computadora::setRAM(unsigned int ram){
 void computadora::setCPU(std::string &cpu){
     this->CPU = cpu;
 }
+
+std::string computadora::getSO(){
+    return SO;
+}
+
+std::string computadora::getNombre(){
+    return Nommbre;
+}
+unsigned int computadora::getRAM(){
+    return RAM;
+}
+
+std::string computadora::getCPU(){
+    return CPU;
+}

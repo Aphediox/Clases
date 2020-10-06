@@ -15,7 +15,7 @@ class computadora{
     void setSO(std::string &so);
     void setNombre(std::string &nom);
     void setRAM(unsigned int ram);
-    void setCPU(std::string cpu);
+    void setCPU(std::string &cpu);
 
     std::string getSO();
     std::string getNombre();

@@ -1,7 +1,7 @@
 #include "computadora.h"
 
 computadora::computadora(){
-
+    RAM=0;
 }
 
 computadora::computadora(std::string SO, std::string Nombre, unsigned int RAM, std::string CPU){

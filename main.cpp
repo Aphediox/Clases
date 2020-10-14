@@ -15,7 +15,9 @@ main(){
     
     computadora pc3;
     std::cin >> pc3;
-    std::cout << pc3;
+    std::cout << std::endl;
+    std::cout << pc3 << std::endl;
+    std::cout << std::endl;
     
     laboratorio l1;
     

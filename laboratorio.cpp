@@ -15,8 +15,6 @@ void laboratorio::agregarCP(const computadora &cp){
     
 }
     
-    
-
 void laboratorio::mostrar(){
     std::cout << std::left;
     std::cout << std::setw(19) << "Sistema Operativo";

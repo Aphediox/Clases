@@ -14,10 +14,10 @@ main(){
     cp1.setRAM(128);
 
     laboratorio l1;
-    l1.agregarCP(cp2);
-    l1.agregarCP(cp1);
+    //l1.agregarCP(cp2);
+    //l1.agregarCP(cp1);
     std::cin >> pc3;
-    l1.agregarCP(pc3);
+    l1 << pc3 << cp2 << cp1;
     l1.mostrar();
 
     //std::cout << cp2;

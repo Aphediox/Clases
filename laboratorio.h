@@ -10,6 +10,10 @@ class laboratorio:public computadora{
     laboratorio();
     void agregarCP(const computadora &cp);
     void mostrar();
+    friend laboratorio& operator<<(laboratorio &lab, const computadora &pc){
+        lab.agregarCP(pc);
+        return lab;
+    }
 };
 
 #endif

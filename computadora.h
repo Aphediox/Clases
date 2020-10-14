@@ -30,6 +30,19 @@ class computadora{
         out << std::setw(15) << c.CPU;
         return out;
     } 
+
+    friend std::istream& operator>>(std::istream &in, computadora &pc){
+        std::cout << "Sistema Operativo: ";
+        std::getline(std::cin, pc.SO);
+        std::cout << "Nombre equipo: ";
+        std::getline(std::cin, pc.Nommbre);
+        std::cout << "RAM: ";
+        std::cin >> pc.RAM;
+        std::fflush(stdin);
+        std::cout << "CPU: ";
+        std::getline(std::cin, pc.CPU);
+        return in;
+    }
 };
 
 

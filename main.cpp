@@ -19,6 +19,8 @@ main(){
     l1.agregarCP(pc3);
 
     l1.mostrar();
+
+    //std::cout << cp2;
     return 0;
 
 }

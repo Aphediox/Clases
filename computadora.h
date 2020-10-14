@@ -1,7 +1,7 @@
 #ifndef COMPUTADORA_H
 #define COMPUTADORA_H
 #include <iostream>
-
+#include <iomanip>
 
 class computadora{
     private:
@@ -21,7 +21,15 @@ class computadora{
     std::string getNombre();
     unsigned int getRAM();
     std::string getCPU();
-    
+
+    friend std::ostream& operator<<(std::ostream &out, const computadora &c){
+        out << std::left;
+        out << std::setw(19) << c.SO;
+        out << std::setw(16) << c.Nommbre;
+        out << std::setw(6) << c.RAM;
+        out << std::setw(15) << c.CPU;
+        return out;
+    } 
 };
 
 

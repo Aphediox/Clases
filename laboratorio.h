@@ -17,6 +17,7 @@ class laboratorio:public computadora{
     }
     void respaldar_tabla();
     void respaldar();
+    void recuperar();
 };
 
 #endif

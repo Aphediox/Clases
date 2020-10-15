@@ -1,7 +1,7 @@
 #include "laboratorio.cpp"
 main(){
     
-    computadora cp1;
+    /* computadora cp1;
     std::string aux;
     aux= "Windowos 10";
     cp1.setSO(aux);
@@ -17,19 +17,21 @@ main(){
     std::cin >> pc3;
     std::cout << std::endl;
     std::cout << pc3 << std::endl;
-    std::cout << std::endl;
+    std::cout << std::endl; */
     
     laboratorio l1;
     
     //l1.agregarCP(cp2);
     //l1.agregarCP(cp1);
 
-    l1 << pc3 << cp2 << cp1;
+    //l1 << pc3 << cp2 << cp1;
     
-    l1.mostrar();
-    l1.respaldar_tabla();
+    //l1.mostrar();
+    //l1.respaldar_tabla();
     //std::cout << cp2;
-    l1.respaldar();
+    //l1.respaldar();
+    l1.recuperar();
+    l1.mostrar();
     return 0;
 
 }

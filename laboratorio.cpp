@@ -68,3 +68,35 @@ void laboratorio::respaldar(){
     }
     archivo.close();
 }
+void laboratorio::recuperar(){
+    std::ifstream archivo("Backup_PC");
+    if (archivo.is_open())
+    {
+        std::string temp;
+        int ramus;
+        computadora pc;
+        while (!archivo.eof())
+        {
+            std::getline(archivo, temp);
+            if (archivo.eof())
+            {
+                break;
+            }
+            
+            pc.setSO(temp);
+
+            std::getline(archivo, temp);
+            pc.setNombre(temp);
+
+            std::getline(archivo, temp);
+            ramus = std::stoi(temp);
+            pc.setRAM(ramus);
+            
+            std::getline(archivo, temp);
+            pc.setCPU(temp);
+            agregarCP(pc);
+        }
+        
+    }
+    archivo.close();
+}

@@ -27,8 +27,9 @@ main(){
     l1 << pc3 << cp2 << cp1;
     
     l1.mostrar();
-
+    l1.respaldar_tabla();
     //std::cout << cp2;
+    l1.respaldar();
     return 0;
 
 }

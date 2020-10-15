@@ -1,6 +1,7 @@
 #ifndef LABORATORIO_H
 #define LABORATORIO_H
 #include "computadora.cpp"
+#include <fstream>
 
 class laboratorio:public computadora{
     private:
@@ -14,6 +15,8 @@ class laboratorio:public computadora{
         lab.agregarCP(pc);
         return lab;
     }
+    void respaldar_tabla();
+    void respaldar();
 };
 
 #endif

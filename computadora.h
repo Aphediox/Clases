@@ -28,6 +28,7 @@ class computadora{
         out << std::setw(16) << c.Nommbre;
         out << std::setw(6) << c.RAM;
         out << std::setw(15) << c.CPU;
+        out << std::endl;
         return out;
     } 
 

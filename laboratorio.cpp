@@ -33,5 +33,38 @@ void laboratorio::mostrar(){
         std::cout << "CPU:  " << Lab[i].getCPU() << std::endl; */
         std::cout << std::endl;
     }
-    
+}
+void laboratorio::respaldar_tabla(){
+    std::ofstream archivo("Respaldo_PC");
+    if (archivo.is_open())
+    {
+        archivo << std::left;
+        archivo << std::setw(19) << "Sistema Operativo";
+        archivo << std::setw(16) << "Nombre Equipo";
+        archivo << std::setw(6) << "RAM";
+        archivo << std::setw(15) << "CPU";
+        archivo << std::endl;
+        for (int  i = 0; i < ultimo; i++)
+        {
+            computadora &pc = Lab[i];
+            archivo << pc;
+        }
+    }
+    archivo.close();    
+}
+void laboratorio::respaldar(){
+    std::ofstream archivo("Backup_PC");
+    if (archivo.is_open())
+    {
+        for (int i = 0; i < ultimo; i++)
+        {
+            computadora &pc = Lab[i];
+            archivo << pc.getSO() << std::endl;
+            archivo << pc.getNombre() << std::endl;
+            archivo << pc.getRAM() << std::endl;
+            archivo << pc.getCPU() << std::endl;
+        }
+        
+    }
+    archivo.close();
 }
